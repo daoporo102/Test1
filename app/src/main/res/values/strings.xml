@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nice Job</string>
+    <!--    login facebook-->
+    <string name="facebook_app_id">6218579898218661</string>
+    <string name="fb_login_protocol_scheme">fb6218579898218661</string>
+    <string name="facebook_client_token">eb3f78fc90cff738dd026aeac2521ae0</string>
+
+
+</resources>
