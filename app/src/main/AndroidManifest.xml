@@ -26,6 +26,9 @@ hãy thêm thành phần uses-permission vào file kê khai sau thành phần ap
         android:theme="@style/Theme.Test1"
         tools:targetApi="31">
         <activity
+            android:name=".ActivitySaveUserProfile"
+            android:exported="false" />
+        <activity
             android:name=".FacebookLoginActivity"
             android:exported="false" />
 

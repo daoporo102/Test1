@@ -41,6 +41,7 @@ class Activity_SignUp : AppCompatActivity() {
                 firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener {
                     if (it.isSuccessful){
                         val i = Intent(this@Activity_SignUp,ActivityHomeLoginGoogle::class.java)
+//                        val i = Intent(this@Activity_SignUp,Activity_Login::class.java)
                         startActivity(i)
                     }else{
                         Toast.makeText(this@Activity_SignUp,it.exception.toString(),Toast.LENGTH_SHORT).show()
@@ -57,24 +58,3 @@ class Activity_SignUp : AppCompatActivity() {
 
     }
 }
-
-//        if (email.length < 6) {
-////                Toast.makeText(this,"Validation Completed",Toast.LENGTH_SHORT).show()
-//            binding.SignUpEdtPassword.error = "Minimum 6 Character Username"
-//            return
-//        }
-//        if (password.length < 6) {
-//            binding.SignUpEdtPassword.error = "Minimum 6 Character Password"
-//            return
-//        }
-//        if (re_password.length < 6) {
-//            binding.SignUpEdtRePassword.error = "Minimum 6 Character Re_Password"
-//            return
-//        }
-
-//            if (!password.matches(".*[A-Z].*".toRegex())){
-//                binding.SignUpEdtPassword.error = "Must Contain 1 Upper-case Character"
-//            }
-//            if (!password.matches(".*[a-z].*".toRegex())){
-//                binding.SignUpEdtRePassword.error = "Must Contain 1 Lower-case Character"
-//            }
